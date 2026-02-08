@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Espinho Vai e Vem | Entregas rápidas em Espinho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Serviço de entregas rápidas em Espinho. Medicamentos, documentos urgentes, recolhas e entregas locais com atendimento direto." />
+
+  <style>
+    :root{
+      --orange:#ffb703;
+      --dark:#111827;
+      --gray:#6b7280;
+      --bg:#f8fafc;
+      --white:#ffffff;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
+
+    /* ================= NAVBAR ================= */
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:var(--white);
+      box-shadow:0 4px 15px rgba(0,0,0,.05);
+      z-index:1000;
+    }
+
+    .nav-container{
+      max-width:1100px;
+      margin:auto;
+      padding:10px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .logo{
+      height:42px;
+    }
+
+    .menu{
+      display:flex;
+      gap:20px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:var(--dark);
+    }
+
+    .menu a:hover{
+      color:var(--orange);
+    }
+
+    /* ================= SECTIONS ================= */
+    section{
+      padding:90px 20px;
+      max-width:1000px;
+      margin:auto;
+      text-align:center;
+    }
+
+    h1{
+      font-size:34px;
+      margin-bottom:10px;
+    }
+
+    h2{
+      margin-bottom:18px;
+      font-size:24px;
+    }
+
+    .subtitle{
+      color:var(--gray);
+      margin-bottom:30px;
+    }
+
+    /* ================= BUTTONS ================= */
+    .btn{
+      padding:14px 22px;
+      border-radius:12px;
+      font-weight:700;
+      text-decoration:none;
+      display:inline-block;
+      margin:6px;
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .primary{
+      background:var(--orange);
+      color:#000;
+    }
+
+    .dark{
+      background:var(--dark);
+      color:#fff;
+    }
+
+    .whatsapp{
+      background:#25D366;
+      color:#fff;
+    }
+
+    /* ================= CARDS ================= */
+    .grid{
+      display:grid;
+      gap:18px;
+      margin-top:30px;
+    }
+
+    @media(min-width:800px){
+      .grid{grid-template-columns:repeat(3,1fr);}
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:14px;
+      box-shadow:0 8px 20px rgba(0,0,0,.05);
+    }
+
+    .card p{
+      color:var(--gray);
+      font-size:14px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer{
+      text-align:center;
+      padding:25px;
+      color:var(--gray);
+      font-size:13px;
+      background:white;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-container">
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <div class="menu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contactos">Contactos</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- INÍCIO -->
+<section id="inicio">
+  <h1>🚚 Espinho Vai e Vem</h1>
+  <p class="subtitle">Entregas rápidas em Espinho e arredores até 20 km</p>
+
+  <a class="btn primary" href="https://www.deliveryorderforms.com/orderWithoutUpfrontPay/s2nklktgkV" target="_blank">📝 Pedir entrega</a>
+  <a class="btn dark" href="tel:+351938388858">📞 Ligar</a>
+  <a class="btn whatsapp" href="https://wa.me/351938388858" target="_blank">💬 WhatsApp</a>
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <h2>Serviços</h2>
+
+  <div class="grid">
+    <div class="card">
+      💊
+      <h3>Medicamentos</h3>
+      <p>Entrega rápida de bens essenciais</p>
+    </div>
+
+    <div class="card">
+      📄
+      <h3>Documentos urgentes</h3>
+      <p>Transporte seguro e prioritário</p>
+    </div>
+
+    <div class="card">
+      📦
+      <h3>Recolhas & entregas</h3>
+      <p>Para particulares e empresas</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2>Sobre nós</h2>
+  <p style="max-width:600px;margin:auto;color:var(--gray)">
+    Somos um serviço local focado em rapidez, confiança e atendimento direto.
+    Oferecemos tracking em tempo real e total responsabilidade pelas entregas.
+  </p>
+</section>
+
+
+<!-- CONTACTOS -->
+<section id="contactos">
+  <h2>Contactos</h2>
+
+  <p>📞 <strong>938 388 858</strong></p>
+  <p>✉️ espinhovaievem@gmail.com</p>
+
+  <br>
+
+  <a class="btn dark" href="tel:+351938388858">Ligar agora</a>
+  <a class="btn whatsapp" href="https://wa.me/351938388858">WhatsApp</a>
+</section>
+
+
+<footer>
+  © Espinho Vai e Vem · Espinho · Portugal
+</footer>
+
+</body>
+</html>
+
+
